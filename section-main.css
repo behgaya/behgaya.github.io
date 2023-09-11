@@ -55,10 +55,8 @@
 
 @media (max-width: 1280px) {
     .section-main__image{
-        width: 40vw;
+        width: 30vw;
     }
-
-
 }
 
 @media (max-width: 800px) {
