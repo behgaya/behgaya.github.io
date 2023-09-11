@@ -1,0 +1,242 @@
+.section-contact{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;    
+}
+
+.section-contact__wrapper{
+    width: 90%;
+    display:flex;
+    flex-direction:row;
+    gap: 10vw;
+    
+}
+
+.section-contact__title{
+    width: 90%;
+}
+
+.section-contact__button{
+    padding: 1vw;
+    background-color: rgb(218, 160, 0)      ;    
+}
+
+.section-contact__footnote{
+    display: flex;
+
+}
+
+.message__form{
+    position: relative;
+    width: 50%;
+}
+
+.message__list {
+    position: relative;
+    background-color: rgb(33, 33, 33);
+    display: grid;
+    grid-template-rows: repeat(5, 4vw) minmax(0, 12vw);
+    grid-gap: 1vw;
+    padding: 2vw;
+    border-radius: 5px;
+}
+
+.message__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.message__box {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+.message__button{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.message-confirmation{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.8);
+    border: rgb(218, 160, 0) solid 0.2px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+
+    transition: all 0.5s ease;
+}
+
+.message-confirmation__text{
+    color: white;
+    z-index: 5;
+    font-size: 4rem;
+}
+
+.checkmark {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: rgb(218, 160, 0);
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px rgb(218, 160, 0);;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    position:relative;
+    top: 5px;
+    right: 5px;
+   margin: 0 auto;
+}
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: rgb(218, 160, 0);    
+    fill: #fff;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+ 
+}  
+
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #4bb71b;
+    }
+}
+
+.contact-information{
+    width: 50%;
+
+}
+
+.contact-information__item{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    gap: .8vw;
+    padding: 1vw;
+}
+
+.contact-information__icon:hover{
+    cursor: pointer;
+}
+
+.contact-information__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content:center;
+}
+
+
+.contact-information__title{
+    color: white;
+}
+
+.contact-information__description{
+    color: white;
+}
+
+.contact-information__icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(218, 160, 0);
+    border-radius: 50%;
+    width: 4vw;
+    padding: 1vw;
+}
+
+.contact-information__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+}
+
+@media (max-width: 800px) {
+    .contact-information {
+        width: 90%;
+        align-items: center;
+    }
+
+    .contact-information__item {
+        width: 80%;
+        gap: 5vw;
+        align-items: center;
+        
+    }
+
+    .contact-information__icon {
+        width: 12vw;
+        padding: 3vw;
+    }
+
+    .section-contact__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    .message__form {
+        width: 100%;
+    }
+
+    .message__list {
+        grid-template-rows: repeat(5, 15vw) minmax(0, 18vw);
+        grid-gap: 5vw;
+        padding: 2vw;
+    }
+
+    .message-confirmation__text {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .checkmark {
+        width: 80px;
+        height: 80px;
+        box-shadow: inset 0px 0px 0px rgb(218, 160, 0);
+    }
+
+
+}
+
+

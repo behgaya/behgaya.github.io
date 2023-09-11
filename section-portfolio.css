@@ -1,0 +1,122 @@
+.section-portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.section-portfolio__wrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.section-portfolio__title{
+    width: 90%;
+}
+
+.section-portfolio__button-bar{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2vw;
+}
+
+.section-portfolio__button{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    gap:1vw
+}
+
+.section-portfolio__button-text{
+    display: none;    
+    color: white;
+}
+
+
+.section-portfolio__button:hover{
+    transition: 1s ease;
+    background-color: rgb(218, 160, 0);
+    cursor: pointer;
+}
+
+.section-portfolio__active-button{
+    background-color: rgb(218, 160, 0);
+}
+
+.section-portfolio__active-button .section-portfolio__button-text{
+    transition: 1s;
+    display: block; 
+}
+
+.section-portfolio__button:hover .section-portfolio__button-text{
+    transition: 1s;
+    display: block; 
+}
+
+.section-portfolio__list{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: 18vw 18vw;
+    gap: 1vw;
+}
+
+.section-portfolio__list-image {
+    width: 100%;
+    height: 100%;
+    border: rgb(100,100,100) solid;
+    transition: opacity 0.5s ease;
+}
+
+
+
+.section-portfolio__list-image:hover{
+    opacity: 70%;
+    cursor: pointer
+}
+
+.section-portfolio__carousel{
+}
+
+.section-portfolio__carousel-cell{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.section-portfolio__carousel-cell:before{
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.section-portfolio__second-list{
+    width: 100%;
+    height: 100%;
+    border: rgb(100,100,100) solid;
+    transition: opacity 0.5s ease;
+}
+
+
+@media (max-width: 800px) {
+    .section-portfolio__list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 30vw 30vw;
+    }
+
+    .section-portfolio__carousel-cell {
+        margin-right: 0; 
+    }
+
+    .section-portfolio__wrapper{
+        gap: 5vw;
+    }
+    .section-portfolio{
+        gap: 10vw;
+    }
+}

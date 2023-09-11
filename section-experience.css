@@ -1,0 +1,119 @@
+.section-experience{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+}
+
+.section-experience__title{
+    width: 90%;
+}
+
+.section-experience__wrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 20vw;
+}
+
+.experience-list{
+    color: white;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+
+.experience-list__date{
+    display:flex;
+    flex-direction: row;
+    gap: 0.5vw;
+}
+
+.experience-summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    height: 100%;
+    grid-row-gap: 2vw;
+}
+
+.experience-summary-panel{
+    width: 13vw;
+    border: solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5vw;
+}
+
+.experience-summary-panel__title{
+    color: rgb(218, 160, 0);
+    margin: 0;
+    padding: 0; 
+}
+
+.experience-summary-panel__description{
+    color: white;
+    margin: 0; 
+    padding: 0;
+}
+
+.experience-list__expanded{
+    display: none;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+@media (max-width: 800px) {
+
+    .section-experience{
+        gap:10vw;
+        align-items: center;
+    }
+
+    .section-experience__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+        width: 75%;
+    }
+
+    .experience-list {
+        width: 100%;
+        gap: 10vw; 
+    }
+
+    .experience-summary {
+        grid-template-columns: repeat(2, 1fr); 
+        gap:5vw;
+        width: 100%; 
+    }
+
+    .experience-summary-panel {
+        width: 100%;
+        padding: 4vw;
+        margin: 0 auto;
+        
+    }
+
+    .experience-list__expanded {
+        display: block; 
+    }
+
+    .experience-summary-panel__title {
+        font-size: clamp(1rem, 3vw, 2rem);
+    }
+
+    .experience-summary-panel__description {
+        font-size: clamp(0.8rem, 2vw, 1.5rem);
+    }
+    .experience-list__expanded{
+        display: flex;
+        gap: 10vw;
+    }
+}

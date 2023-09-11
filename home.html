@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="section-main.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="section-about.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="section-portfolio.css">
+    <link rel="stylesheet" href="section-skills.css">
+    <link rel="stylesheet" href="section-education.css">
+    <link rel="stylesheet" href="section-contact.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="stylesheet" href="contact-information.css">
+    <link rel="stylesheet" href="message.css">
+    <link rel="stylesheet" href="section-experience.css">
+    <link rel="stylesheet" href="education-list.css">
+    <link rel="stylesheet" href="skills-list.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!--SCRIPTS-->
+    <script src="https://kit.fontawesome.com/c2fe7ccc23.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="navbar">
+        <nav class="navbar__wrapper">
+            <ul class="navbar__icon-list">
+                <li class="navbar__item navbar__item-bars" id="button--threebars" onclick="contractElements()">
+                    <i class="navbar__icon navbar__icon--size--large text--size--large fa-solid fa-bars"></i>
+                </li>
+                <li class="navbar__item contractable-button" id="button--about">
+                    <a id="aboutNav" class="navbar__button">
+                        <i class="navbar__icon navbar__icon--size--small fa-solid fa-user"></i>
+                        <h4 class="navbar__text">SOBRE</h4>
+                    </a>
+                </li>
+                <li class="navbar__item contractable-button" id="button--portfolio">
+                    <a id="portfolioNav" class="navbar__button">
+                        <i class="navbar__icon navbar__icon--size--small fa-solid fa-briefcase"></i>
+                        <h4 class="navbar__text">PORTFOLIO</h4>
+                    </a>
+                </li>
+                <li class="navbar__item contractable-button">
+                    <a id="skillsNav" class="navbar__button">
+                        <i class="navbar__icon navbar__icon--size--small fa-solid fa-brain"></i>
+                        <h4 class="navbar__text">SKILLS</h4>   
+                    </a>
+                </li>
+                <li class="navbar__item contractable-button">
+                    <a id="experienceNav" class="navbar__button">
+                        <i class="navbar__icon navbar__icon--size--small fa-solid fa-user-doctor"></i>
+                        <h4 class="navbar__text">EXPERIENCE</h4>
+                    </a>
+                </li>
+                <li class="navbar__item contractable-button">
+                    <a id="educationNav" class="navbar__button">
+                        <i class="navbar__icon navbar__icon--size--small fa-solid fa-user-graduate"></i>
+                        <h4 class="navbar__text">EDUCATION</h4>
+                    </a>
+                </li>
+                <li class="navbar__item contractable-button">
+                    <a id="contactNav" class="navbar__button">
+                        <i class="navbar__icon navbar__icon--size--small fa-solid fa-envelope"></i>
+                        <h4 class="navbar__text">CONTACT</h4>
+                    </a>
+                </li>
+                <li class="navbar__item contractable-button">
+                    <a id="homeNav" class="navbar__button">
+                        <i class="navbar__icon navbar__icon--size--small fa-solid fa-house"></i>
+                        <h4 class="navbar__text">HOME</h4>
+                    </a> 
+                </li>
+            </ul>
+        </nav>    
+    </header>
+    
+    <!--PRESENTATION-->
+    <main class="section-main" id="section-home">
+        <div class="section-main__wrapper">
+            <figure class="section-main__figure">
+                <img class="section-main__image" src="images/ragnar-capa.jpg" alt="teste">
+            </figure>
+            <div class="section-main__presentation">
+                <div class="section-main__greetings">
+                    <p class="text--size--medium">Olá!</p>
+                    <div class="section-main__greetings-introduction">
+                        <span class="text--size--extralarge text--weight--thin">EU SOU </span><h1 class="text--size--extralarge text--weight--bold text--color--title">RAGNAR LOTHBORK</h1>
+                    </div>
+                    <p class="text--size--extrasmall">
+                        I'm a Tunisian based web designer & front‑end developer focused on crafting
+                        clean & user‑friendly experiences, I am passionate about building excellent
+                        software that improves the lives of those around me.
+                    </p>
+                    <p class="text--size--extrasmall section-main__expanded">
+                        I chose to be a programmer because I've always been intrigued by the limitless possibilities of the digital world. From a young age, I found myself captivated by the idea of creating something out of nothing, of turning lines of code into functional, meaningful applications.
+                    </p>
+
+                    <a id="moreMain" class="button--size--medium button--colored">
+                        <div id="moreMain">
+                            See More
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="section-about" id="section-about">
+        <div class="section-about__title">
+            <h2 class="text--color--title text--size--extralarge">| SOBRE</h2>
+        </div>
+        <div class="section-about__wrapper">
+            <dl class="section-about__information-list">
+                <div>
+                    <dt class="section-about__information-title text--weight--normal text--size--extrasmall ">NOME</dt>
+                    <dd class="text--weight--normal text--size--medium">RAGNAR LOTHBORK</dd>
+                </div>
+                <div>
+                    <dt class="section-about__information-title text--weight--normal text--size--extrasmall">IDADE</dt>
+                    <dd class="text--weight--normal text--size--medium">33 ANOS</dd>
+
+                </div>
+                <div>
+                    <dt class="section-about__information-title text--weight--normal text--size--extrasmall ">PROFISSÃO</dt>
+                    <dd class="text--weight--normal text--size--medium">DESENVOLVEDOR FULLSTACK</dd>
+                </div>
+                <div>
+                    <dt class="section-about__information-title text--weight--normal text--size--extrasmall ">NATURALIDADE</dt>
+                    <dd class="text--weight--normal text--size--medium">ITAJAÍ/SC</dd>
+                </div>
+                <div>
+                    <dt class="section-about__information-title text--weight--normal text--size--extrasmall ">NACIONALIDADE</dt>
+                    <dd class="text--weight--normal text--size--medium">BRASILEIRO</dd>
+                </div>
+                <div class="section-about__button">
+                    <a class="button--size--medium text--weight--normal button--colored">
+                        <p class="text--size--medium">
+                            Curriculo
+                        </p>
+                    </a>
+                </div>
+            </dl>
+
+            <figure class="section-about__figure">
+                <img class="section-about__image" src="images/ragnar-sobre.jpg" alt="">
+            </figure>
+        </div>
+
+    </section>
+
+    <section class="section-portfolio" id="section-portfolio">
+        <div class="section-portfolio__title">
+            <h2 class="text--color--title text--size--extralarge">| Portifolio</h2>
+        </div>
+        <div class="section-portfolio__wrapper">
+            <ul class="section-portfolio__button-bar">
+                <li>
+                    <a onclick="changeImages('website'); setActiveButton(this);" class="section-portfolio__button">
+                        <i class="text--size--small fa-solid fa-code" style="color: #ffffff;"></i>
+                        <h3 class="section-portfolio__button-text" >Websites</h3>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="changeImages('project'); setActiveButton(this);" class="section-portfolio__button">
+                        <i class="text--size--small iconsThirdArticle fa-solid fa-palette" style="color: #ffffff;"></i>
+                        <h3 class="section-portfolio__button-text">Projects</h3>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="changeImages('picture'); setActiveButton(this);" class="section-portfolio__button">
+                        <i class="text--size--small iconsThirdArticle fa-solid fa-camera" style="color: #ffffff;"></i>
+                        <h3 class="section-portfolio__button-text">Pictures</h3>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="section-portfolio__carousel">
+                <ul class="section-portfolio__list section-portfolio__carousel-cell">
+                    <li class="section-portfolio__list-item">
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-1.jpg" alt="Website 1">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-2.jpg" alt="Website 2">
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-3.jpg" alt="Website 3">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-4.jpg" alt="Website 4">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-5.jpg" alt="Website 5">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-6.jpg" alt="Website 6">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="section-portfolio__list section-portfolio__carousel-cell">
+                    <li class="section-portfolio__list-item">
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-6.jpg" alt="Website 6">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-5.jpg" alt="Website 5">
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-4.jpg" alt="Website 4">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-3.jpg" alt="Website 3">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-2.jpg" alt="Website 2">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-1.jpg" alt="Website 1">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="section-portfolio__list section-portfolio__carousel-cell">
+                    <li class="section-portfolio__list-item">
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-1.jpg" alt="Website 1">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-2.jpg" alt="Website 5">
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-3.jpg" alt="Website 4">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-4.jpg" alt="Website 3">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image" src="images/portfolio-website-5.jpg" alt="Website 2">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-portfolio__link" target="_blank">
+                            <img class="section-portfolio__list-image"alt="Website 1">
+                        </a>
+                    </li>
+                </ul>
+            </div>   
+        </div>         
+    </section>
+
+    <section class="section-skills" id="section-skills">
+        <div class="section-skill__title"> 
+            <h2 class="text--color--title text--size--extralarge">| Skills</h2>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">HTML</h4>
+                <img class="skills-list__image" src="images/html.png" alt="HTML">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">CSS</h4>
+                <img class="skills-list__image" src="images/css.png" alt="CSS">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">CSHARP</h4>
+                <img class="skills-list__image" src="images/csharp.png" alt="CSHARP">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">JAVASRIPT</h4>
+                <img class="skills-list__image" src="images/javascript.png" alt="JAVASRIPT">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">.NET CORE</h4>
+                <img class="skills-list__image" src="images/netcore.png" alt="Image 3">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star-half fa-2xs" ></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">TYPESCRIPT</h4>
+                <img class="skills-list__image" src="images/ts.png" alt="TYPESCRIPT">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star-half fa-2xs" ></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">REACT</h4>
+                <img class="skills-list__image" src="images/react.png" alt="REACT">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star-half fa-2xs"></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">VSCODE</h4>
+                <img class="skills-list__image" src="images/vscode.png" alt="VSCODE">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star-half fa-2xs" ></i>
+                    </ul>
+                </div>
+                
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">VSCODE</h4>
+                <img class="skills-list__image" src="images/git.png" alt="Image 3">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star-half fa-2xs" ></i>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">POSTGREESQL</h4>
+                <img class="skills-list__image" src="images/postgresql.png" alt="POSTGREESQL">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs"></i>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">WEBPACK</h4>
+                <img class="skills-list__image" src="images/webpack.png" alt="WEBPACK">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">NGINX</h4>
+                <img class="skills-list__image" src="images/nginx.png" alt="NGINX">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">UBUNTU</h4>
+
+                <img class="skills-list__image" src="images/ubuntu.png" alt="UBUNTU">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">AWS</h4>
+                <img class="skills-list__image" src="images/aws.png" alt="AWS">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                    <li class="skills-list__star">                    
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">PHOTOSHOP</h4>
+                <img class="skills-list__image" src="images/photoshop.png" alt="PHOTOSHOP">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="skills-list__item">
+                <h4 class="text--size--extrasmall text--weight--bold text--color--default">FIGMA</h4>
+                <img class="skills-list__image" src="images/figma.png" alt="FIGMA">
+                <ul class="skills-list__rating">
+                    <li class="skills-list__star">
+                        <i class="fa-solid fa-star fa-2xs" ></i>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-experience" id="section-experience">
+        <div class="section-experience__title">
+            <h2 class="text--color--title text--size--extralarge">| Experiência</h2>
+        </div>
+
+        <div class="section-experience__wrapper">
+            <dl class="experience-list">
+                <div class="experience-list__item">
+                    <div class="experience-list__date text--weight--normal text--size--extrasmall">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2012 - 2014
+                    </div>
+                    <dt class="text--size--medium text--weight--bold">GOOGLE</dt>
+                    <dd class="text--size--small text--weight--thin"> Estágio na Google atuando na equipe de desenvolvimento de ferramenta para o ADS.</dd>
+                </div>
+                <div class="experience-list__item">
+                    <div class="text--size--extrasmall experience-list__date text--weight--normal">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2014 - 2018
+                    </div>
+                    <dt class="text--size--medium text--weight--bold">BOOKING</dt>
+                    <dd class="text--size--small text--weight--thin"> Cargo de desenvolvedor junior na equipe de desenvolvimento back end.</dd>
+                </div>
+                <div class="experience-list__item">
+                    <div class="text--size--extrasmall experience-list__date text--weight--normal">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2018 - 2021
+                    </div>
+                    <dt class="text--size--medium text--weight--bold">FACEBOOK</dt>
+                    <dd class="text--size--small text--weight--thin"> Cargo de desenvolvedor pleno na equipe da criação da biblioteca React.</dd>
+                </div>
+                <div class="experience-list__item">
+                    <div class="text--size--extrasmall experience-list__date text--weight--normal">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2021 - Trabalhando
+                    </div>
+                    <dt class="text--size--medium text--weight--bold">TWITTER</dt>
+                    <dd class=" text--size--small text--weight--thin"> Cargo de desenvolvedor sênior na equipe de criação do aplicativo X.</dd>
+                </div> 
+                <div class="experience-list__expanded" id="experienceExpand">
+                    <div class="experience-list__item">
+                        <div class="experience-list__date text--weight--thin text--size--extrasmall">
+                            <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                            2012 - 2014
+                        </div>
+                        <dt class="text--size--medium text--weight--bold">GOOGLE</dt>
+                        <dd class="text--size--small text--weight--thin"> Estágio na Google atuando na equipe de desenvolvimento de ferramenta para o ADS.</dd>
+                    </div>
+                    <div class="experience-list__item">
+                        <div class="text--size--extrasmall experience-list__date text--weight--normal">
+                            <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                            2014 - 2018
+                        </div>
+                        <dt class="text--size--medium text--weight--bold">BOOKING</dt>
+                        <dd class="text--size--small text--weight--thin"> Cargo de desenvolvedor junior na equipe de desenvolvimento back end.</dd>
+                    </div>
+                    <div class="experience-list__item">
+                        <div class="text--size--extrasmall experience-list__date text--weight--normal">
+                            <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                            2018 - 2021
+                        </div>
+                        <dt class="text--size--medium text--weight--bold">FACEBOOK</dt>
+                        <dd class="text--size--small text--weight--thin"> Cargo de desenvolvedor pleno na equipe da criação da biblioteca React.</dd>
+                    </div>
+                    <div class="experience-list__item">
+                        <div class="text--size--extrasmall experience-list__date text--weight--normal">
+                            <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                            2021 - Trabalhando
+                        </div>
+                        <dt class="text--size--medium text--weight--bold">TWITTER</dt>
+                        <dd class=" text--size--small text--weight--thin"> Cargo de desenvolvedor sênior na equipe de criação do aplicativo X.</dd>
+                    </div> 
+                </div>
+                          
+                <a class="button--size--medium text--weight--normal button--colored text--size--small" id="moreExperience">
+                    See More
+                </a>   
+            </dl>
+            
+            <ul class="experience-summary">
+                <li class="experience-summary-panel">
+                    <h3 class="experience-summary-panel__title text--size--large">9</h3>
+                    <p class="experience-summary-panel__description text--size--extrasmall">ANOS DE EXPERIÊNCIA</p>
+                </li>
+                <li class="experience-summary-panel">
+                    <h3 class="experience-summary-panel__title text--size--large">16</h3>
+                    <p class="experience-summary-panel__description text--size--extrasmall">PROJETOS INDIVIDUAIS</p>
+                </li>
+                <li class="experience-summary-panel">
+                    <h3 class="experience-summary-panel__title text--size--large">72</h3>
+                    <p class="experience-summary-panel__description text--size--extrasmall">PROJETOS EM EQUIPES</p>
+                </li>
+                <li class="experience-summary-panel">
+                    <h3 class="experience-summary-panel__title text--size--large">87</h3>
+                    <p class="experience-summary-panel__description text--size--extrasmall">CURSOS DE ESPECIALIZAÇÃO</p>
+                </li>
+            </ul >
+
+        </div>
+
+
+    </section>
+
+    <section class="section-education" id="section-education">
+        <div class="section-education__title">
+            <h2 class="text--color--title text--size--extralarge">| EDUCAÇÃO</h2>
+        </div>
+        <div class="section-education__wrapper">
+            <dl class="education-list">
+                <div class="education-list__subject text--weight--bold text--size--extrasmall">
+                    BACHARELADO E PÓS-GRADUAÇÃO
+                </div>
+                <div class="education-list__item">
+                    <div class="education-list__date text--weight--bold text--size--extrasmall">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2012 - 2016
+                    </div>
+                    <dt class="text--weight--bold text--size--medium">CIÊNCIA DA COMPUTAÇÃO</dt>
+                    <dd class="text--weight--normal text--size--extrasmall"> Bacharelado em Ciência da Computação pela Univali.</dd>
+                </div>
+                <div class="education-list__item">
+                    <div class="education-list__date text--weight--bold text--size--extrasmall">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2012 - 2016
+                    </div>
+                    <dt class="text--weight--bold text--size--medium">BIG DATA</dt>
+                    <dd class="text--weight--normal text--size--extrasmall"> Pós graduado em Big Data pela .</dd>
+                </div>                
+                <div class="education-list__item">
+                    <div class="education-list__date text--weight--bold text--size--extrasmall">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2018 - 2021
+                    </div>
+                    <dt class="text--weight--bold text--size--medium">COMPUTAÇÃO APLICADA </dt>
+                    <dd class="text--weight--normal text--size--extrasmall">Mestrado em Computação Aplicada pela UFSP.</dd>
+                </div>
+                <div class="education-list__expanded">
+                    <div class="education-list__item">
+                        <div class="education-list__date text--weight--bold text--size--extrasmall">
+                            <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                            2018 - 2021
+                        </div>
+                        <dt class="text--weight--bold text--size--medium">FRONTEND</dt>
+                        <dd class="text--weight--normal text--size--extrasmall"> Curso de formação FrontEnd misnistrado por Jackson Camara. Total de 500 horas concluídas</dd>
+                    </div>
+                    <div class="education-list__item">
+                        <div class="education-list__date text--weight--bold text--size--extrasmall">
+                            <i class="fa-solid fa-calendar-days text--size--extrasmall" style="color: #f5b63f;"></i>
+                            2018 - 2021
+                        </div>
+                        <dt class="text--weight--bold text--size--medium">BACKEND</dt>
+                        <dd class="text--weight--normal text--size--extrasmall"> Curso de formação BackEnd misnistrado por Jackson Camara. Total de 500 horas concluídas</dd>
+                    </div>                
+                    <div class="education-list__item">
+                        <div class="education-list__date text--weight--bold text--size--extrasmall">
+                            <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                            2018 - 2021
+                        </div>
+                        <dt class="text--weight--bold text--size--medium">FULL STACK</dt>
+                        <dd class="text--weight--normal text--size--extrasmall">Curso de formação BackEnd misnistrado por Jackson Camara. Total de 500 horas concluídas</dd>
+                    </div>
+                </div>
+            </dl>
+
+            <dl class="education-list">
+                <div class="education-list__subject text--weight--bold text--size--extrasmall">
+                    CURSO DE ESPECIALIZAÇÃO
+                </div>
+                <div class="education-list__item">
+                    <div class="education-list__date text--weight--bold text--size--extrasmall">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2018 - 2021
+                    </div>
+                    <dt class="text--weight--bold text--size--medium">FRONTEND</dt>
+                    <dd class="text--weight--normal text--size--extrasmall"> Curso de formação FrontEnd misnistrado por Jackson Camara. Total de 500 horas concluídas</dd>
+                </div>
+                <div class="education-list__item">
+                    <div class="education-list__date text--weight--bold text--size--extrasmall">
+                        <i class="fa-solid fa-calendar-days text--size--extrasmall" style="color: #f5b63f;"></i>
+                        2018 - 2021
+                    </div>
+                    <dt class="text--weight--bold text--size--medium">BACKEND</dt>
+                    <dd class="text--weight--normal text--size--extrasmall"> Curso de formação BackEnd misnistrado por Jackson Camara. Total de 500 horas concluídas</dd>
+                </div>                
+                <div class="education-list__item">
+                    <div class="education-list__date text--weight--bold text--size--extrasmall">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2018 - 2021
+                    </div>
+                    <dt class="text--weight--bold text--size--medium">FULL STACK</dt>
+                    <dd class="text--weight--normal text--size--extrasmall">Curso de formação BackEnd misnistrado por Jackson Camara. Total de 500 horas concluídas</dd>
+                </div>
+                <div class="education-list__expanded">
+                    <div class="education-list__item"> 
+                        <div class="education-list__date text--weight--bold text--size--extrasmall">
+                            <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                            2018 - 2021
+                        </div>
+                        <dt class="text--weight--bold text--size--medium">Entity Framework</dt>
+                        <dd class="text--weight--normal text--size--extrasmall"> Curso de formação Entity Framework misnistrado por Jackson Camara. Total de 500 horas concluídas</dd>
+                    </div>
+                    <div class="education-list__item">
+                        <div class="education-list__date text--weight--bold text--size--extrasmall">
+                            <i class="fa-solid fa-calendar-days text--size--extrasmall" style="color: #f5b63f;"></i>
+                            2018 - 2021
+                        </div>
+                        <dt class="text--weight--bold text--size--medium">React</dt>
+                        <dd class="text--weight--normal text--size--extrasmall"> Curso de formação React misnistrado por Jackson Camara. Total de 500 horas concluídas</dd>
+                    </div>                
+                    <div class="education-list__item">
+                        <div class="education-list__date text--weight--bold text--size--extrasmall">
+                            <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                            2018 - 2021
+                        </div>
+                        <dt class="text--weight--bold text--size--medium">Angular</dt>
+                        <dd class="text--weight--normal text--size--extrasmall">Curso de formação Angular misnistrado por Jackson Camara. Total de 500 horas concluídas</dd>
+                    </div>
+                </div>
+            </dl>
+            <dl class="education-list">
+                <div class="education-list__subject text--weight--bold text--size--extrasmall">
+                    CURSO DE ESPECIALIZAÇÃO
+                </div>
+                <div class="education-list__item">
+                    <div class="education-list__date text--weight--bold text--size--extrasmall">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2017 - 2019
+                    </div>
+                    <dt class="text--weight--bold text--size--medium">INGLÊS</dt>
+                    <dd class="text--weight--normal text--size--extrasmall"> Curso de Inglês na Univali Idiomas. Níveis a1, a2, b1</dd>
+                </div>
+                <div class="education-list__item">
+                    <div class="education-list__date text--weight--bold text--size--extrasmall">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2020 - 2021
+                    </div>
+                    <dt class="text--weight--bold text--size--medium">INGLÊS</dt>
+                    <dd class="text--weight--normal text--size--extrasmall"> Curso de Inglês na Wizard. Níveis b2, c1</dd>
+                </div>                
+                <div class="education-list__item">
+                    <div class="education-list__date text--weight--bold text--size--extrasmall">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                        2018 - 2021
+                    </div>
+                    <dt class="text--weight--bold text--size--medium">INGLÊS</dt>
+                    <dd class="text--weight--normal text--size--extrasmall"> Curso de Inglês Particular. Nível c2</dd>
+                </div>
+                <div class="education-list__expanded">
+                    <div class="education-list__item">
+                        <div class="education-list__date text--weight--bold text--size--extrasmall">
+                            <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                            2017 - 2019
+                        </div>
+                        <dt class="text--weight--bold text--size--medium">Espanhol</dt>
+                        <dd class="text--weight--normal text--size--extrasmall"> Curso de Espanhol na Univali Idiomas. Níveis a1, a2, b1</dd>
+                    </div>
+                    <div class="education-list__item">
+                        <div class="education-list__date text--weight--bold text--size--extrasmall">
+                            <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                            2020 - 2021
+                        </div>
+                        <dt class="text--weight--bold text--size--medium">Espanhol</dt>
+                        <dd class="text--weight--normal text--size--extrasmall"> Curso de Espanhol na Wizard. Níveis b2, c1</dd>
+                    </div>                
+                    <div class="education-list__item">
+                        <div class="education-list__date text--weight--bold text--size--extrasmall">
+                            <i class="fa-solid fa-calendar-days" style="color: #f5b63f;"></i>
+                            2018 - 2021
+                        </div>
+                        <dt class="text--weight--bold text--size--medium">Espanhol</dt>
+                        <dd class="text--weight--normal text--size--extrasmall"> Curso de Espanhol Particular. Nível c2</dd>
+                    </div>
+                </div>
+            </dl>
+        </div>
+        <div class="section-education__button">
+            <a id="moreButton" class="button--size--medium text--weight--normal button--colored">
+                See More
+            </a>
+        </div>
+    </section>
+
+    <section class="section-contact" id="section-contact">
+        <div class="section-contact__title">
+            <h2 class="text--color--title text--size--extralarge">| CONTATO</h2>
+        </div>
+
+        <div class="section-contact__wrapper">
+            <div class="contact-information">
+                <div class="contact-information__item">
+                    <figure class="contact-information__icon">
+                        <i class="fa-solid fa-envelope text--size--medium text--color--default"></i>
+                    </figure>
+                    <dl class="contact-information__text">
+                        <dt class="contact-information__title text--size--extrasmall text--weight--thin">
+                            Email
+                        </dt>
+                        <dd class="contact-information__description text--weight--bold text--size--extrasmall">
+                            meuemail@gmail.com
+                        </dd>
+                    </dl>
+                </div>
+                <div class="contact-information__item">
+                    <figure class="contact-information__icon">
+                        <i class="fa-solid fa-phone text--size--medium text--color--default"></i>
+                    </figure>
+                    <dl class="contact-information__text">
+                        <dt class="contact-information__title text--size--extrasmall text--weight--thin text--color--default">
+                            Telefone
+                        </dt>
+                        <dd class="contact-information__description text--size--extrasmall text--weight--bold">
+                            47 9 9999-9999
+                        </dd>
+                    </dl>
+                </div>
+                <div class="contact-information__item">
+                    <figure class="contact-information__icon">
+                        <i class="fa-brands fa-whatsapp text--size--medium text--color--default"></i>
+                    </figure>
+                    <dl class="contact-information__text">
+                        <dt class="contact-information__title text--size--extrasmall text--weight--thin">
+                            Whatsapp
+                        </dt>
+                        <dd class="contact-information__description text--size--extrasmall text--weight--bold">
+                            47 9 9999-9999
+                        </dd>
+                    </dl>
+
+                </div>
+                <div class="contact-information__item">
+                    <figure class="contact-information__icon">
+                        <i class="fa-brands fa-telegram text--size--medium text--color--default"></i>
+                    </figure>
+                    <dl class="contact-information__text">
+                        <dt class="contact-information__title text--size--extrasmall text--weight--thin">
+                            Telegram
+                        </dt>
+                        <dd class="contact-information__description text--size--extrasmall text--weight--bold">
+                            47 9 9999-9999
+                        </dd>
+                    </dl>
+                </div>
+                <div class="contact-information__item">
+                    <figure class="contact-information__icon">
+                        <i class="fa-brands fa-skype text--size--medium text--color--default"></i>
+                    </figure>
+                    <dl class="contact-information__text">
+                        <dt class="contact-information__title text--size--extrasmall text--weight--thin">
+                            Skype
+                        </dt>
+                        <dd class="contact-information__description text--size--extrasmall text--weight--bold">
+                            meuskype
+                        </dd>
+                    </dl>
+                </div>
+                <div class="contact-information__item">
+                    <figure class="contact-information__icon">
+                        <i class="fa-brands fa-discord text--size--medium text--color--default"></i>
+                    </figure>
+                    <dl class="contact-information__text">
+                        <dt class="contact-information__title text--size--extrasmall text--weight--thin">
+                            Discord
+                        </dt>
+                        <dd class="contact-information__description text--size--extrasmall text--weight--bold">
+                            meudiscord
+                        </dd>
+                    </dl>
+                </div>
+                
+            </div>
+
+            <div class="message__form">
+                <div class="message-confirmation" id="messageConfirmation">
+                    <div class="success-animation" id="successAnimation">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /></svg>
+                    </div>
+                    <p class="message-confirmation__text" id="message-text">Message Sent</p>
+                </div>
+                <form class="message__list" action="https://formsubmit.co/bernardo.gaya2@gmail.com" method="post" onsubmit="return submitForm()">
+                    <h3 class="message__title text--color--default text--size--large">
+                        Leave a message!
+                    </h3>
+                    <input class="message__box text--size--extrasmall" name="Nome" type="text" placeholder="Nome" id="name"> 
+                    <input class="message__box text--size--extrasmall" name="Email" type="email" placeholder="Email" id="email">
+                    <input class="message__box text--size--extrasmall" name="Subject" type="text" placeholder="Assunto" id="subject">
+                    <input class="message__box text--size--extrasmall" name="Telephone" type="text" placeholder="Telefone" id="telephone">
+                    <textarea class="message__box text--size--extrasmall" name="Message" type="text" placeholder="Mensagem" id="message"></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit" class="section-contact__button text--size--extrasmall text--weight--bold">Send</button>
+                </form>           
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__title">
+                <h2 class="text--color--title text--size--extralarge">Me Siga!</h2>
+            </div>
+            <ul class="footer__link-list">
+                <li>
+                    <a class="footer__button" href="https://www.linkedin.com/in/bernardo-henrique-gaya-553735214/" target="_blank" >
+                        <i class="footer__icon fa-brands fa-linkedin-in"></i>
+                        <p class="footer__text text--size--extrasmall text--weight--bold text--color--default">Bernardo Henrique Gaya</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__button" href="https://www.linkedin.com/in/bernardo-henrique-gaya-553735214/" target="_blank" >
+                        <i class="footer__icon fa-brands fa-github"></i>
+                        <p class="footer__text text--size--extrasmall text--weight--bold text--color--default">behgaya</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__button" href="https://twitter.com/behgaya" target="_blank">
+                        <i class="footer__icon fa-brands fa-twitter"></i>
+                        <p class="footer__text text--size--extrasmall text--weight--bold text--color--default">@behgaya</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__button" href="https://www.instagram.com/behgaya2/" target="_blank">
+                        <i class="footer__icon fa-brands fa-instagram text--color--default"></i>
+                        <p class="footer__text text--size--extrasmall text--weight--bold text--color--default">behgaya2</p>
+
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__button" href="https://www.youtube.com/channel/UCdUjyMZaW5tFDq5URa55O8w" target="_blank">
+                        <i class="footer__icon fa-brands fa-youtube text--color--default"></i>
+                        <p class="footer__text text--size--extrasmall text--weight--bold text--color--default">Be</p>
+
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__button" href="https://www.facebook.com/bernardohenrique.gaya" target="_blank">
+                        <i class="footer__icon fa-brands fa-facebook text--color--default"></i>
+                        <p class="footer__text text--size--extrasmall text--weight--bold text--color--default">bernardohenrique.gaya</p>
+
+                    </a>
+                </li>
+            </ul>   
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

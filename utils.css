@@ -1,0 +1,97 @@
+.button--colored:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.button--colored{
+    background-color: rgb(218, 160, 0);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.button--size--small{
+    width: 5.5vw;
+    padding: 0.5vw;
+}
+
+.button--size--medium{
+    width: 10.5vw;
+    padding: 1vw;
+}
+
+.button--size--large{
+    width: 15.5vw;
+    padding: 1vw;
+}
+
+.text--color--title{
+    color: rgb(218, 160, 0);
+}
+
+.text--color--default{
+    color: rgb(255, 255, 255);
+}
+
+.text--size--extrasmall{
+    font-size: clamp(1rem, 1vw, 2rem); 
+}
+
+.text--size--small{
+    font-size: clamp(1rem, 1.5vw, 2rem); 
+}
+
+.text--size--medium{
+    font-size: clamp(1rem, 2vw, 2rem); 
+}
+
+.text--size--large{
+    font-size: clamp(3em, 3vw, 4rem); 
+}
+
+.text--size--extralarge{
+    font-size: clamp(4rem, 4vw,5rem); 
+}
+
+.text--weight--thin{
+    font-weight: 100;
+}
+
+.text--weight--normal{
+    font-weight: 400;
+}
+
+.text--weight--bold{
+    font-weight: 700;
+}
+
+
+@media (max-width: 800px) {
+    .button--size--small,
+    .button--size--medium,
+    .button--size--large {
+        width: 100%;
+        padding: 10px; 
+    }
+
+    .text--size--extrasmall {
+        font-size: clamp(1rem, 2vw, 3rem);
+    }
+
+    .text--size--small {
+        font-size: clamp(1rem, 3vw, 4rem); 
+    }
+
+    .text--size--medium {
+        font-size: clamp(1.5rem, 3vw, 4rem); 
+    }
+
+    .text--size--large {
+        font-size: clamp(2.5rem, 5vw, 6rem);
+    }
+
+    .text--size--extralarge {
+        font-size: clamp(4rem, 8vw, 9rem); 
+    }
+}

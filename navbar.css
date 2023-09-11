@@ -1,0 +1,101 @@
+.navbar{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.navbar__button:hover .navbar__text{
+    display: block; 
+}
+
+.navbar__wrapper{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5vw;
+    width: 90%;
+}
+
+.navbar__button{
+    background-color: rgb(41, 41, 41);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all  0.3s;
+
+}
+
+.navbar__text{
+    display: none;  
+    padding: 0 1vw 0 0;
+    color:white;
+}
+
+
+.navbar__button:hover{
+    background-color: rgb(218, 160, 0);
+    cursor: pointer;
+    width: auto;
+}
+
+.navbar__button:hover .navbar__text{
+    display: block; 
+}
+
+.navbar__icon{
+    padding: 1vw;
+    color: white;
+}
+.contractable-button {
+    transition: transform 0.5s ease;
+}
+
+
+.navbar__item-bars{
+    background-color: black;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar__icon--size--large{
+    font-size: clamp(3em, 3vw, 4rem); 
+}
+
+.navbar__icon--size--small{
+    font-size: clamp(1rem, 1.5vw, 2rem); 
+}
+
+.navbar__icon-list{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+@media (max-width: 800px) {
+    .navbar__wrapper {
+        justify-content: center;
+        gap: 1vw;
+    }
+
+    .navbar__button {
+        width: auto;
+    }
+
+    .navbar__icon--size--small{
+        font-size: clamp(1rem, 1.5rem, 2rem); 
+    }
+    .navbar__icon{
+        padding: 2vw;
+        color: white;
+    }
+
+}

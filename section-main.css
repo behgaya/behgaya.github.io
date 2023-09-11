@@ -1,0 +1,113 @@
+.section-main{
+    position: relative;
+    width: 100vw;
+    display: flex;
+}
+
+.section-main__wrapper{
+    position: relative;     
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.section-main__figure{
+    position: static; 
+    width: 50%;
+}
+
+.section-main__greetings-introduction{
+    display: flex;
+    flex-direction: row;
+    gap:1vw;
+}
+
+.section-main__presentation{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10vw;
+}
+
+.section-main__greetings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    gap: 1vw;
+    width: 100%;
+}
+
+.section-main__image{
+    width: auto;
+
+}
+
+.section-main__expanded{
+    display: none;
+}
+
+
+
+@media (max-width: 800px) {
+    .section-main__greetings-introduction{
+        display: flex;
+        flex-direction: column;
+        gap:1vw;
+    }
+    .section-home{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-main__wrapper {
+        padding: 20vw 5vw 20vw 10vw ;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    
+    .section-main__greetings {
+        text-align: left;
+        align-items: left;
+        gap: 5vw;
+    }
+
+    .section-main__image {
+        display: none;
+    }
+}
+
+@media (max-height: 500px){
+    .section-main__greetings-introduction{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-home{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-main__wrapper {
+        padding: 5vw 5vw 5vw 10vw ;
+        flex-direction: column;
+    }
+    
+    .section-main__greetings {
+        text-align: left;
+        align-items: left;
+        gap: 5vw;
+    }
+
+    .section-main__image {
+        display: none;
+    }
+}
